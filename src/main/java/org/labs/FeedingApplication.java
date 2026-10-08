@@ -10,7 +10,7 @@ public class FeedingApplication {
         AtomicLong[] result = developerFeedingService.getBowlsEaten();
         developerFeedingService.startLunch();
         for (int i = 0; i < result.length; i++) {
-            System.out.printf("Developer number {%d} eaten {%d}%n", i, result[i].get());
+            System.out.printf("Developer number {%d} eaten {%d}\n", i, result[i].get());
         }
     }
 }
